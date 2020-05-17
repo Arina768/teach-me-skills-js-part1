@@ -76,13 +76,15 @@ function task3() {
   // ваш код должен быть ниже этой строки
 let i = 0;
   while (i < 22) {
-  const dd = i % 2 === 0 ? i : i + result ;
-    console.log(dd);
+
+  result = i % 2 === 0 ? result : i + result ;
+
     i++;
 }
   // ваш код должен быть выше этой строки
   return result;
 }
+
 
 
 /**
@@ -92,12 +94,16 @@ let i = 0;
  */
 function task4() {
   // ваш код должен быть ниже этой строки
-for (let number = 0; number <= 100; number++){
-  const division = number % 5 === 0 ? 5 : number;
-  console.log(division);
+for (let i = 0; i <= 100; i++){
+  if (i % 5 === 0) {
+    console.log(5);
+  }
+  // const division = i % 5 === 0 ? console.log(5) : i;
 }
   // ваш код должен быть выше этой строки
 }
+
+
 
 
 /**
@@ -110,12 +116,9 @@ function task5(num, str, bool, val) {
   if(Boolean(result) === false) {
   result = true
 }
-else {
-  result= num || str || bool || val
-  // result = num || str || bool || val
-}
   return Boolean(result);
 }
+
 
 
 
