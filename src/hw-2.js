@@ -51,9 +51,8 @@ for (const key in obj) {
 function task3(obj, property) {
     let result = null;
     // ваш код должен быть ниже этой строки
-    for ( const key in obj){
-        result = obj.hasOwnProperty ('property');
-        }
+   result = obj.hasOwnProperty('property');
+
     // ваш код должен быть выше этой строки
     return result;
 }
@@ -158,12 +157,12 @@ function task8(obj, str) {
  * Задание с *.
  * Все аргументы функции должны добавляться в массив.
  */
-function task9() {
-    const array = [];
+const array = [];
+function task9(... array) {
     // ваш код должен быть ниже этой строки
-  let newArray = Array.from(arguments);
-    array.push(newArray);
 
+    // let newArray = Array.from(arguments);
+    // array.push(newArray);
 // или
 // return Array.from(arguments)
 
