@@ -95,8 +95,8 @@ function sort(array, callback) {
     let newArray = array.slice();
     for (let i = 0; i < array.length ;i++)  {
         sortArray.push(callback(...newArray));
-         let beb = newArray.indexOf(callback (...newArray), 0);
-        newArray.splice(beb, 1);
+         let index = newArray.indexOf(callback (...newArray), 0);
+        newArray.splice(index, 1);
     }
     return sortArray;
 }
