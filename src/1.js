@@ -1,11 +1,11 @@
 function getList(list) {
 
   const originalList = document.createElement('ul');
-  let listItem = 0;
+  let Item = 0;
   for (let i = 0; i < list.length; i++) {
-    listItem = document.createElement('li');
-    listItem.innerText = list[i]["title"];
-    originalList.append(listItem);
+    Item = document.createElement('li');
+    Item.innerText = list[i]["title"];
+    originalList.append(Item);
   }
   document.body.append(originalList);
 }

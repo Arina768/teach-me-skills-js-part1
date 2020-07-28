@@ -1,13 +1,13 @@
-async function getDocument(getList) {
+async function getDoc(getList) {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/');
     const json = await response.json();
 
     getList(json);
 
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    console.log(error);
   }
 }
 
-export default getDocument;
+export default getDoc;
